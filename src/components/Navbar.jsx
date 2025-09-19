@@ -28,7 +28,7 @@ const Navbar = () => {
         <a href="#home" className="flex items-center gap-3 mb-8">
           <img src="/images/logo.png" alt="logo" width={32} height={32} />
           <span className="hidden group-hover:block font-dark text-white font-bold text-lg whitespace-nowrap">
-            Velvet Pour
+            DeepFake
           </span>
         </a>
 
