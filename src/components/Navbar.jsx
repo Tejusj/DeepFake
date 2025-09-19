@@ -2,6 +2,7 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { navLinks } from '../constants'; // We'll create this file next
+import '../index.css'; // Ensure Tailwind CSS is imported
 
 // ESSENTIAL SETUP: Register the ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -31,7 +32,7 @@ const Navbar = () => {
                 {/* Logo and Brand Name */}
                 <a href="#home" className="flex items-center gap-3">
                     <img src="/images/logo.png" alt="logo" width={32} height={32} />
-                    <p className="text-white font-bold text-xl">Velvet Pour</p>
+                    <p className="text-white font-dark text-xl">Velvet Pour</p>
                 </a>
 
                 {/* Desktop Navigation Links */}
@@ -40,7 +41,7 @@ const Navbar = () => {
                         <li key={link.id}>
                             <a
                                 href={`#${link.id}`}
-                                className="text-gray-300 hover:text-white transition-colors duration-300"
+                                className="text-gray-300 hover:text-white font-dark transition-colors duration-300"
                             >
                                 {link.title}
                             </a>
